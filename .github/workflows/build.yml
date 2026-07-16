@@ -28,3 +28,6 @@ jobs:
 
       - name: Build Next.js App (Smoke Test)
         run: npm run build
+
+      - name: Scan Dependencies for Vulnerabilities (SCA)
+        run: npm audit --audit-level=high
